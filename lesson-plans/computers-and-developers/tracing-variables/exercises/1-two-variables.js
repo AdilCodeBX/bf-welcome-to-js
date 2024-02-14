@@ -1,5 +1,6 @@
 'use strict';
 
+debugger;
 /* Two Variables
 
   Can you predict what the [trace] button will log to the console?
@@ -19,6 +20,10 @@ let y = 'hello ' + x;
 
 console.log(y);
 
+// [hello Pieter]
+
 y = 'good bye ' + x;
 
 console.log(y);
+
+// [good bye Pieter]

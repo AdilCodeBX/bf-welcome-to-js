@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /*  Stepping Through
 
   click the [debug] button to start the program in your debugger
@@ -12,6 +14,8 @@
     look around the debugger, what do you see?
 
 */
+
+//
 
 let didClickOk = confirm('please click "ok":');
 

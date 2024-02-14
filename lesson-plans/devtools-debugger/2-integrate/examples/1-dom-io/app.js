@@ -1,6 +1,7 @@
 // --- import the DOM I/O functions to use in this program ---
 
 //  there are only 5 functions, just enough to practice fundamentals
+
 import {
   whenFormDataChanges,
   readString,

@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /*  Scope Panel
 
   go through this program one step at a time and watch the Scopes panel
@@ -8,12 +10,14 @@
 
   before pressing the "step" button:
   - predict which line will be next
+    [ let message ]
   - predict what will change in the Scopes panel -->
 
   after pressing the "step":
   - were you right about which line was next?
+  [alert(message)]
   - were you right about what changed in the Scopes panel? -->
-
+    [yes]
 */
 
 let didClickOk = confirm('please click "ok":');
