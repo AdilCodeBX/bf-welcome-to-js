@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /* Four Variables
 
   Can you predict what the [trace] button will log to the console?
@@ -25,6 +27,10 @@ let d = 'hello ' + c;
 
 console.log(d);
 
+// [hello Pieter Rabbit]
+
 d = 'good bye ' + c;
 
 console.log(d);
+
+// [goood bye Pieter Rabbit]

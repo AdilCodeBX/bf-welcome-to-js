@@ -1,6 +1,11 @@
+'use strict';
+
+debugger;
+
 /* A Script
 
   can you find this script in your "sources" tab?
+   [yes]
 
 */
 

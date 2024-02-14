@@ -1,4 +1,5 @@
 'use strict';
+debugger;
 
 let toReverse = null;
 while (toReverse === null) {
@@ -17,3 +18,6 @@ alert(transformation);
 /*  ===== Challenges =====
   - Put the characters back in the right order after the string was reversed.
 */
+transformation = toReverse + '<- ';
+
+alert(transformation);

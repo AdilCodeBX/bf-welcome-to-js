@@ -1,5 +1,7 @@
 'use strict';
 
+debugger;
+
 /* Strings
 
   1- strings are a data type used to work with text in programs

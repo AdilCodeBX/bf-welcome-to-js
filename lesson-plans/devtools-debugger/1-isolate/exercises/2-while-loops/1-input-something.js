@@ -1,4 +1,5 @@
 'use strict';
+debugger;
 
 let input = null;
 while (input === null) {
@@ -10,3 +11,10 @@ alert('thank you!');
 /*  ===== Challenges =====
   - Try to create an infinite loop so the user gets stuck inside your prompt.
 */
+let input2 = null;
+
+while (input2 === null) {
+  input2 = prompt('enter your age:');
+}
+
+alert('good job!');

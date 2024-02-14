@@ -1,12 +1,16 @@
 'use strict';
 
-let input = prompt('enter your name:');
+debugger;
+
+let input = prompt('enter your first name:');
+
+let input2 = prompt('enter your last name:');
 
 let greeting = '';
-if (input === null) {
+if (input === null && input2 === null) {
   greeting = 'hello anonymous.';
 } else {
-  greeting = 'hello ' + input + '!';
+  greeting = 'hello ' + input + ' ' + input2 + '!';
 }
 
 alert(greeting);

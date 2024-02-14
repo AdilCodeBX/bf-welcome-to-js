@@ -1,5 +1,6 @@
 'use strict';
 
+debugger;
 /* Booleans
 
   1- booleans are a data type used to work with true or false( yes or no)
