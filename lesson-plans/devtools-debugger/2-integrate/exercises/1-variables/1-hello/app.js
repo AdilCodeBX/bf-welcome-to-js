@@ -12,22 +12,16 @@ whenFormDataChanges('user-info', () => {
 
   // --- read user input ---
 
-  let name = readString('the-name');
+  let firstName = readString('first-name');
+  let lastName = readString('last-name');
 
-  console.log(name);
+  console.log(firstName, lastName);
 
   // --- create a message ---
 
-  let greeting = 'Hello ' + name + '!';
-
+  let greeting = `Hello ${firstName} ${lastName}! 
+good bye ${firstName} ${lastName}!  `;
   // --- display the message ---
 
   displayString('greeting-output', greeting);
 });
-
-/*  ===== Challenges =====
-
-  - Modify the program so it uses a first AND a last name
-  - Make the program say "hello", then "good bye" on a new line
-
-*/

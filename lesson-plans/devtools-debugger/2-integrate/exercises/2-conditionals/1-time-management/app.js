@@ -17,17 +17,21 @@ whenFormDataChanges('sleep-info', () => {
   // read a boolean from the <input> with id "free-time"
   let hasTime = readBoolean('free-time');
 
+  let isFree = readBoolean('free');
+
   // --- generate advice ---
 
   let advice = '';
-  if (isTired && hasTime) {
+  if (isTired && hasTime && isFree) {
     advice = 'Take a nap!';
-  } else if (!isTired && hasTime) {
+  } else if (!isTired && hasTime && isFree) {
     advice = 'Study some flashcards.';
-  } else if (isTired && !hasTime) {
+  } else if (isTired && !hasTime && !isFree) {
     advice = 'Make some coffee.';
-  } else if (!isTired && !hasTime) {
+  } else if (!isTired && !hasTime && !isFree) {
     advice = 'Have a great day!';
+  } else if (isTired && hasTime && !isFree) {
+    advice = 'watch some tutorials about js!';
   }
 
   // --- display the advice ---
