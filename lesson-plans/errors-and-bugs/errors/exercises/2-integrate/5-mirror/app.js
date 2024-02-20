@@ -4,23 +4,25 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
+debugger;
+
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name: Syntax error
+  message: invalid left-hand side expression in prefix operation
 
-  location:
+  location: line 25
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: hyphen in the console
 
-  the fix(es):
+  the fix(es): add quotes inside the console for the string
 */
 
 whenFormDataChanges('input', () => {
-  console.log(--- form data changed ---);
+  console.log('form data changed');
 
   // --- read the user's input ---
 

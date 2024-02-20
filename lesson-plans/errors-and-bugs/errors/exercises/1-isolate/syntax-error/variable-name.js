@@ -1,27 +1,24 @@
-
-
 'use strict';
+
+debugger;
 
 console.log('--- in execution phase ---');
 
-
-
 /*
-  environment:
+  environment: js
 
-  name:
-  message:
+  name: const number
+  message: 'three'
 
-  location:
+  location: line 27
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: we can't declare variable with a number
 
-  the fix(es):
+  the fix(es): const number = 'three'
 */
 
+const number = 'three';
 
-const 3 = 'three';
-
-
+console.log(number);

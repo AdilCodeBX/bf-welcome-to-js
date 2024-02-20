@@ -1,25 +1,24 @@
-
-
 'use strict';
+
+debugger;
 
 console.log('--- in execution phase ---');
 
-
 /*
-  environment:
+  environment: string
 
-  name:
+  name:  quotesInQuotes 
   message:
 
   location:
 
   life cycle:
 
-  the mistake:
+  the mistake: singles quotes inside singles;
 
   the fix(es):
 */
 
-const quotesInQuotes = 'remind yourself ''i can do this!'' at least once a day';
+const quotesInQuotes = "remind yourself 'i can do this!' at least once a day";
 
-
+console.log(quotesInQuotes);

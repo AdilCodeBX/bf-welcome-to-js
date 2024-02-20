@@ -3,20 +3,20 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment:chrome
 
   name:
   message:
 
-  location:
+  location: line 20
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: welf is not declared
 
-  the fix(es):
+  the fix(es): declare welf with let
 */
 
-welf = 'ingrad';
+let welf = 'ingrad';
 
 console.log(welf);

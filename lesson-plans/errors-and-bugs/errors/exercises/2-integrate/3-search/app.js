@@ -4,20 +4,20 @@ import {
   readBoolean,
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
-
+debugger;
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: reference
+  message: doesExist is not defined
 
-  location:
+  location: line 35 
 
-  life cycle:
+  life cycle: creation face
 
-  the mistake:
+  the mistake: not declared variable
 
-  the fix(es):
+  the fix(es): declare the variable using let
 */
 
 whenFormDataChanges('search-input', () => {
@@ -32,7 +32,7 @@ whenFormDataChanges('search-input', () => {
 
   // --- do the search ---
 
-  doesExist = false;
+  let doesExist = false;
 
   if (caseSensitive) {
     doesExist = searchThis.includes(findThis);

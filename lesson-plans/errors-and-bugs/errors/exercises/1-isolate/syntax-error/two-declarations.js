@@ -1,22 +1,26 @@
 'use strict';
 
+debugger;
+
 console.log('--- in execution phase ---');
 
 /*
   environment:
 
-  name:
-  message:
+  name: tree
+  message: 'birch'
 
-  location:
+  location: 22 line
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: in the second line do not add let
 
-  the fix(es):
+  the fix(es): let tree = 'birch';
 */
 
 let tree = 'oak';
 
-let tree = 'birch';
+tree = 'birch';
+
+console.log(tree);
