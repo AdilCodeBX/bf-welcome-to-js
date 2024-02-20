@@ -4,19 +4,21 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
+debugger;
+
 /*
-  environment:
+  environment: Chrome
 
   name:
   message:
 
-  location:
+  location: line 48
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: the displayString must not start with uppercase
 
-  the fix(es):
+  the fix(es): add lowercase to displayString function 
 */
 
 whenFormDataChanges('sleep-info', () => {
@@ -43,5 +45,5 @@ whenFormDataChanges('sleep-info', () => {
 
   // --- display the advice ---
 
-  DisplayString('advice-area', advice);
+  displayString('advice-area', advice);
 });

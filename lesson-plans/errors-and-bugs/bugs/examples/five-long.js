@@ -14,6 +14,8 @@
 
 */
 
+debugger;
+
 let input = prompt('enter something 5 characters long');
 
 if (input === null) {

@@ -4,20 +4,21 @@ import {
   readBoolean,
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
+debugger;
 
 /*
-  environment:
+  environment: Chrome
 
-  name:
-  message:
+  name: Uncaught type error
+  message: screaming is not iterable at htmFormElement
 
-  location:
+  location:  line 35
 
-  life cycle:
+  life cycle: execution
 
-  the mistake:
+  the mistake: checkbox don't contain text 
 
-  the fix(es):
+  the fix(es): change screaming with text
 */
 
 whenFormDataChanges('reversify', () => {
@@ -31,7 +32,7 @@ whenFormDataChanges('reversify', () => {
   // --- reverse the string input ---
 
   let reversed = '';
-  for (let character of screaming) {
+  for (let character of text) {
     reversed = character + reversed;
   }
 

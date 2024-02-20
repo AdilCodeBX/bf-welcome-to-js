@@ -1,9 +1,9 @@
-
-
+/* eslint-disable linebreak-style */
 'use strict';
 
-console.log('--- in execution phase ---');
+debugger;
 
+console.log('--- in execution phase ---');
 
 /*
   environment:
@@ -11,17 +11,26 @@ console.log('--- in execution phase ---');
   name:
   message:
 
-  location:
+  location: js
 
-  life cycle:
+  life cycle:  line 33
 
-  the mistake:
+  the mistake: we had isHappy = true; two times we don't need that
 
-  the fix(es):
+  the fix(es): isHappy = true;
 */
+// eslint-disable-next-line prettier/prettier
+
+// eslint-disable-next-line linebreak-style
 
 let isHappy = false;
 
-true = isHappy;
+console.log(isHappy);
 
+isHappy = true;
 
+console.log(isHappy);
+
+isHappy = 'good';
+
+console.log(isHappy);

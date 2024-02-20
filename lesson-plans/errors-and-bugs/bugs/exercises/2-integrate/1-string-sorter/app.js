@@ -4,6 +4,10 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
+('use strict');
+
+debugger;
+
 whenFormDataChanges('to-sort', () => {
   // debugger;
   console.log('--- form data changed ---');

@@ -5,19 +5,23 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
+('use strict');
+
+debugger;
+
 /*
-  environment:
+  environment: Chrome
 
   name:
   message:
 
-  location:
+  location: line 36
 
-  life cycle:
+  life cycle:  execution
 
-  the mistake:
+  the mistake:  miss the = , and we don't need + before text
 
-  the fix(es):
+  the fix(es): let repeated = + text + '\n' + text;
 */
 
 whenFormDataChanges('user-data', () => {
@@ -29,7 +33,7 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 
